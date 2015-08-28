@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>Welcome to the PI Demo</h1>
+    <p>Find out what it can do</p>
+    <p><a class="btn btn-primary btn-lg" href="http://peoples-intelligence.org">Learn more about People's Intelligence &raquo;</a></p>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+    {{docs|markdown}}
+    </div>
+  </div>
+{% endblock %}
